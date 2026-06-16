@@ -2,31 +2,33 @@
 
 int main(){
 float temperature;
-int humanidity;
+int humidity;
 printf("Enter temperature (C):\n");
 scanf("%f",&temperature);
-printf("Enter humanidity (%%): \n");
-scanf("%d",&humanidity);
+printf("Enter humidity (%%): \n");
+scanf("%d",&humidity);
+printf("------WEATHER 🌡️ REPORT------");
 if(temperature>35){
-printf("weather: very hot\n");
+printf("weather: 🌞 very hot\n");
 }
 else if(temperature>25){
-printf("weather: warm\n");
+printf("weather:🌞 warm\n");
 }
 else if(temperature>15){
-printf("weather: pleasant \n");
+printf("weather:  pleasant \n");
 }
 else
 {
 printf("weather: cold \n");
 }
-if(humanidity>70){
-printf("humanidity: high \n");
+if(humidity>70){
+printf("humidity: high \n");
 }
-else if(humanidity<=70)
+else if(humidity<=70)
 {
-printf("humanidity: normal \n");
+printf("humidity: normal \n");
 }
 return 0 ;
 
+}
 }
