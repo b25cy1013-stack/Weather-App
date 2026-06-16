@@ -7,7 +7,7 @@ printf("Enter temperature (C):\n");
 scanf("%f",&temperature);
 printf("Enter humidity (%%): \n");
 scanf("%d",&humidity);
-printf("------WEATHER 🌡️ REPORT------");
+printf("------WEATHER 🌡️ REPORT----\n-");
 if(temperature>35){
 printf("weather: 🌞 very hot\n");
 }
@@ -21,14 +21,21 @@ else
 {
 printf("weather: cold \n");
 }
-if(humidity>70){
+if(humidity>80){
+printf("humidity: very high \n");
+}
+else if(humidity>60)
+{
 printf("humidity: high \n");
 }
-else if(humidity<=70)
-{
-printf("humidity: normal \n");
+else if(humidity>30){
+    printf("humidity : normal \n");
 }
+else
+printf("humidity : low");
 return 0 ;
+
+}
 
 }
 }
