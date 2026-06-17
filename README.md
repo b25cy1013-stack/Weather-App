@@ -8,6 +8,7 @@ scanf("%f",&temperature);
 printf("Enter humidity (%%): \n");
 scanf("%d",&humidity);
 printf("------WEATHER 🌡️ REPORT----\n-");
+printf("🌞🌞🌞");
 if(temperature>35){
 printf("weather: 🌞 very hot\n");
 }
